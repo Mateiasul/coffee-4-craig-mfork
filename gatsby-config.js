@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/coffee-4-craig-mfork",
   siteMetadata: {
     title: 'Coffee 4 Craig',
     description:
