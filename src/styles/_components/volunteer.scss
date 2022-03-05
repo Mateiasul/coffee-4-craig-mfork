@@ -1,0 +1,108 @@
+.volunteer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+    
+    @media only screen and (min-width: 1024px) {
+        height: 650px;
+    }
+}
+
+.volunteer__wrapper {
+    @include gridWidth;
+    width: 100%;
+    position: relative;
+    padding: 0 0 40px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 60px 40px;
+    }
+
+    .volunteer-title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: 0;
+        color: #181F27;
+        opacity: 1;
+
+        @media (min-width: 768px) {
+            text-align: left;
+            font-size: 45px;
+        }
+    }
+
+    .volunteer-text {
+        letter-spacing: 0;
+        color: #181F27;
+        opacity: 1;
+        font-weight: 500;
+        font-size: 16px;
+        padding-bottom: 20px;
+        text-align: center;
+        line-height: 1.4;
+
+        @media (min-width: 768px) {
+            text-align: left;
+            padding-right: 65px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.volunteer__col {
+
+    &:first-child {
+        
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px 24px;
+        
+        @media only screen and (min-width: 768px) {
+            @include col(6, 12, true, false);
+        }
+    }
+    
+      &:last-child {
+        @include col(6, 12, false, true);
+    
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        padding: 0;
+
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
+      }
+
+      .donate {
+          top: unset;
+      }
+}
+
+.volunteer__button-row {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .volunteer-button {
+        padding: 20px;
+        margin: 0 8px 10px;
+        text-align: center;
+        display: block;
+
+        @media (min-width: 768px) {
+            margin: 0 16px 0 0;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.quote {
+  @include gridWidth;
+
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: 80px 0 40px;
+  }
+}
+
+.quote__wrapper {
+  @media only screen and (min-width: 768px) {
+    @include col(8, 12, true, true);
+  }
+
+  text-align: center;
+}
+
+.quote__text {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 400;
+  padding: 0 20px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 36px;
+    padding: 0 30px;
+  }
+}
+
+.quote__source {
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-color-a;
+  padding: 0 30px;
+  font-size: 14px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}

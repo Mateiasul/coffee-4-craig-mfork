@@ -1,0 +1,206 @@
+.feature-component {
+  background: $primary-color-b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 680px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+  }
+
+  &:before {
+    top: -20px;
+    height: 30px;
+    background: url('../img/green-brush-top.svg') center top no-repeat;
+    background-size: cover;
+  }
+
+  &:after {
+    bottom: -30px;
+    height: 40px;
+    background: url('../img/green-brush-bottom.svg') center top no-repeat;
+    background-size: cover;
+  }
+}
+
+.feature-component__wrapper {
+  @include gridWidth;
+
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 56%;
+    left: -30px;
+    height: 316px;
+    width: 345px;
+    background: url('../img/coffee-ring.svg') center right no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: calc(100% - 80px);
+    display: flex;
+    padding-bottom: 80px;
+  }
+}
+
+.feature-component__col {
+  position: relative;
+  z-index: 1;
+  
+  @media only screen and (min-width: 1024px) {
+    width: 50%;
+  }
+
+  &:first-child {
+    // @include col(6, 12, true, false);
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+
+    @media only screen and (min-width: 1024px) {
+      margin-bottom: 0;
+      padding-right: 80px;
+    }
+  }
+
+  &:last-child {
+    // @include col(6, 12, false, true);
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media only screen and (min-width: 768px) {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 538px;
+        width: 213px;
+        background: url('../img/photo-frame.svg') center right no-repeat;
+        background-size: contain;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      &:before {
+        top: -45px;
+        right: -15px;
+        height: 418px;
+        width: 213px;
+      }
+    }
+
+    @media only screen and (min-width: 1280px) {
+      &:before {
+        top: -30px;
+        right: -30px;
+      }
+    }
+  }
+
+  .feature-component__col-image {
+    border-radius: 5px;
+
+    @media only screen and (min-width: 768px) {
+      position: relative;
+      overflow: hidden;
+      margin: 50px;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      width: 450px;
+      height: 400px;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      width: 528px;
+      height: 599px;
+    }
+  }
+}
+
+.feature-component__donate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 24px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    text-align: left;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    line-height: 26px;
+  }
+}
+  
+.feature-component__donate-cta {
+  margin-top: auto;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.feature-component__donate-btn {
+  text-align: center;
+  padding: 16px;
+  color: black;
+  width: 100%;
+  margin-bottom: 12px;
+  display: block;
+
+  @media only screen and (min-width: 768px) {
+    padding: 20px 16px;
+    margin: 0 8px 0;
+  }
+}
+
+.feature-component__title {
+  color: white;
+}
+
+.feature-component__text {
+  margin-bottom: 24px;
+  color: white;
+}

@@ -1,0 +1,130 @@
+.homepage-hero {
+  background: $primary-color-c;
+  position: relative;
+  padding-bottom: 50px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: url("../img/brush-home-bottom.svg") center bottom no-repeat;
+    background-size: contain;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 0;
+
+    &:after {
+      bottom: -69px;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.homepage-hero__wrapper {  
+  @include gridWidth;
+  width: 100%;
+  padding: 80px 0 0;
+
+  @media only screen and (min-width: 1024px) {
+    height: calc(100% - 80px);
+    display: flex;
+    padding: 150px 50px 0;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    padding: 110px 50px 0;
+  }
+}
+
+.homepage-hero__col {
+  &:first-child {
+    padding: 40px 24px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 60px 24px 10px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      padding: 24px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      padding: 80px 24px 24px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    &:first-child {
+      @include col(7, 12, true, false);
+
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:last-child {
+      @include col(5, 12, false, true);
+
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+}
+
+.homepage-hero__title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 auto 12px;
+  text-align: center;
+
+  @media only screen and (max-width: 480px) {
+    max-width: 320px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 550px;
+    margin: 0 auto 12px;
+    font-size: 42px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    max-width: 480px;
+    font-size: 48px;
+    margin: 0 0 15px;
+    text-align: left;
+  }
+}
+
+.homepage-hero__subtitle {
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 480px) {
+    max-width: 320px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    text-align: left;
+    margin: 0;
+  }
+}

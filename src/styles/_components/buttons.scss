@@ -1,0 +1,123 @@
+.btn {
+  @include btn-reset;
+
+  cursor: pointer;
+  border-radius: $btn-border-radius;
+  transition: background-color 0.5s ease;
+  padding: 12px 16px;
+  font-size: inherit;
+  line-height: 16px;
+  text-decoration: none;
+
+  em {
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &:hover {
+    transition: background-color 0.5s ease;
+  }
+}
+
+.btn--style-a {
+  background: $primary-color-a;
+  color: $secondary-color-b;
+
+  &:hover {
+    background: darken($primary-color-a, 10%);
+  }
+}
+
+.btn--style-b {
+  background: $primary-color-b;
+  color: $secondary-color-b;
+
+  &:hover {
+    background: darken($primary-color-b, 10%);
+  }
+}
+
+.btn--style-c {
+  color: #222222;
+  opacity: 0.9;
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn--style-d {
+  background: $primary-color-d;
+  color: $secondary-color-a;
+
+  &:hover {
+    background: darken($primary-color-d, 10%);
+  }
+}
+
+.btn--style-e {
+  background: $primary-color-e;
+  color: $secondary-color-a;
+
+  &:hover {
+    background: darken($primary-color-e, 10%);
+  }
+}
+
+.btn--style-f {
+  background: $primary-color-f;
+  color: $secondary-color-a;
+
+  &:hover {
+    background: darken($primary-color-f, 10%);
+  }
+}
+
+.btn--style-g {
+  background: $primary-color-b;
+  color: $secondary-color-b;
+
+  &:hover {
+    background: darken($primary-color-b, 10%);
+  }
+}
+
+.btn--paypal {
+  background: $color-paypal-blue;
+  text-decoration: none;
+  color: white;
+  display: none;
+
+  &:hover {
+    background: darken($color-paypal-blue, 10%);
+  }
+
+  em {
+    background: url("../img/pp-white.svg") left center no-repeat;
+    background-size: contain;
+    padding-left: 24px;
+    font-style: normal;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.btn--amazon {
+  background: $color-amazon-yellow;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background: darken($color-amazon-yellow, 10%);
+  }
+
+  em {
+    background: url("../img/amazon-icon.svg") left center no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+    font-style: normal;
+  }
+}

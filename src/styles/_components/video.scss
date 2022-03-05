@@ -1,0 +1,35 @@
+.video {
+  @include gridWidth;
+
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+  z-index: 2;
+  margin-bottom: -70px;
+
+  @media only screen and (min-width: 768px) {
+	  padding: 40px 10% 60px;
+  }
+}
+
+.video__wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	border-radius: 3px;
+
+	@media only screen and (min-width: 768px) {
+		border-radius: 5px;
+	}
+}
+
+.video__iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

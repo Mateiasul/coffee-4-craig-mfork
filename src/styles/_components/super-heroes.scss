@@ -1,0 +1,86 @@
+.superheroes {
+  @include gridWidth;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.superheroes__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.superheroes__section {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;  
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -25px;
+    right: -122px;
+    height: 316px;
+    z-index: -1;
+    width: 345px;
+    background: url('../img/coffee-stain-support-us.svg') center right no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-right: -15px;
+    overflow: hidden;
+  }
+}
+
+.superheroes__section-col {
+  @include col(12, 12, true, true);
+
+  z-index: 2;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+
+  @media only screen and (min-width: 768px) {
+    @include col(4, 12, true, false);
+
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .superheroes__section-col__title {
+    font-size: 37px;
+    margin-bottom: 15px;
+  }
+
+  .superheroes__section-col__body {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 35px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 30px #72727233;
+    border-radius: 5px;
+  }
+
+  p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

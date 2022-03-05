@@ -1,0 +1,48 @@
+.richtext {
+    @include gridWidth;
+  
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width: 768px) {
+        padding: 24px 0;
+        margin-bottom: 20px;
+    }
+  }
+
+.richtext__wrapper {
+    @media only screen and (min-width: 768px) {
+        @include col(8, 12, true, true);
+        width: 684px;
+    }
+ }
+
+.richtext__source {
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary-color-a;
+    letter-spacing: 0;
+    color: #181F27;
+    opacity: 1;
+
+    &.richtext-bold {
+        font-weight: 700;
+    }
+}
+
+.richtext__donate-btn {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.richtext__image__wrapper {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .richtext__image {
+    width: 149px;
+    height: 42px;
+    }
+}

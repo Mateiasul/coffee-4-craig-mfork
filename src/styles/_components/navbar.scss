@@ -1,0 +1,132 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  top: 0;
+  left: 0;
+  transition: background-color 0.2s ease;
+  z-index: 100;
+  border-bottom: 1px solid $secondary-color-b;
+
+  @media only screen and (max-width: 768px) {
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    transition: background-color 0.5s ease;
+  }
+}
+
+.navbar__wrapper {
+  @include gridWidth;
+
+  display: flex;
+  height: 100%;
+  padding: 20px 8px 20px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding-right: 24px;
+  }
+}
+
+.navbar--has-background {
+  background: $secondary-color-b;
+}
+
+.navbar__flex {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  &:first-child {
+    justify-content: flex-start;
+  }
+
+  &:last-child {
+    justify-content: flex-end;
+  }
+}
+
+.navbar__logo {
+  width: 175px;
+
+  img {
+    width: 60%;
+
+    @media only screen and (max-width: 768px) {
+      width: 40%;
+      margin: 24px;
+    }
+  }
+}
+
+.navbar__menu {
+  flex: 4;
+
+  &.is-mobile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: calc(100% - 80px);
+    width: 100%;
+    background: #ffffff;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.navbar__links {
+  @include list-unstyled;
+
+  li {
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    &.nav-link-active {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -46px;
+        height: 5px;
+        width: 100%;
+        background-color: $primary-color-a;
+        z-index: 50;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+
+        @media only screen and (max-width: 961px) {
+          top: 70px;
+          left: 0px;
+        }
+      }
+
+    }
+    @media only screen and (max-width: 961px) {
+      font-size: 40px;
+      line-height: 85px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary-color-a;
+      padding: 10px;
+
+      &:hover {
+        color: $secondary-color-a;
+      }
+    }
+
+    @media only screen and (min-width: 961px) {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+}
+
+
+

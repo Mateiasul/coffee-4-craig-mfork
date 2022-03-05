@@ -1,0 +1,44 @@
+$primary-color-a: #fa887a;
+$primary-color-b: #2db88e;
+$primary-color-c: #f2f1ec;
+$primary-color-d: #e9676c;
+$primary-color-e: #fff9f9;
+$primary-color-f: #ffd23b; // volunteer yellow
+
+$secondary-color-a: #303e48;
+$secondary-color-b: #ffffff;
+$secondary-color-c: #d8d8d8;
+
+$color-paypal-blue: #009cde;
+$color-amazon-yellow: #ffb036;
+
+$color-grey-1: #dadada;
+$text-grey-dark: #181f27;
+
+$font-family-sans-serif: "Lato", "Arial", "sans-serif";
+
+$body-text-color: $secondary-color-a;
+$body-text-size-mobile: 15px;
+$body-text-size: 16px;
+$body-text-font-family: $font-family-sans-serif;
+
+$heading-color: $primary-color-b;
+$heading-font-family: $font-family-sans-serif;
+
+$link-color: $primary-color-d;
+$link-text-decoration: underline;
+$link-hover-color: $primary-color-b;
+
+$grid-max-width: 1160px;
+$grid-gutter-small: 12px;
+$grid-gutter-large: 15px;
+
+$btn-border-radius: 5px;
+
+$bp-a: 600px;
+$bp-b: 960px;
+$bp-c: 1280px;
+
+$spacing: 20px;
+$spacing-half: $spacing / 2;
+$spacing-double: $spacing * 2;
