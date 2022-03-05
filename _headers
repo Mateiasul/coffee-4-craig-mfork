@@ -1,4 +1,183 @@
-[[headers]]
-for = "/static/*"
-[headers.values]
-Cache-Control = "public, max-age=360000"
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/styles.0efb717eba9a4ac40b67.css
+  Cache-Control: public, max-age=31536000, immutable
+/styles-e9d24b1846c7d6eb9685.js
+  Cache-Control: public, max-age=31536000, immutable
+/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-redirects-js-72fd2ec7457ea5c65f7a.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-donate-widget-js-57f7f055203343d55bc7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-site-settings-js-f00cc86c78b638fe8aac.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-index-page-js-ef400d84e93db33ee735.js
+  Cache-Control: public, max-age=31536000, immutable
+/d7eeaac4-dd62917dc706e1ab8ea6.js
+  Cache-Control: public, max-age=31536000, immutable
+/252f366e-88bfb22e3601f67ba3bb.js
+  Cache-Control: public, max-age=31536000, immutable
+/44d9a74c417ca7c4b42dc96810221b8862354751-a74128e791481e5ba4fc.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-about-page-js-08ea709a104c48d3a5fd.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-contact-page-js-21521414e01842c99ffe.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-fundraising-page-js-a61eebec204757558cbb.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-support-page-js-ba0a2f5d14c1977e5434.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-61029fe8610e588eb719.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-redirect-index-js-61c5052f7799f85c6cb1.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-5aefc4e011f32ab9a444.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-e245a832c7032f68d3af.js
+  Cache-Control: public, max-age=31536000, immutable
+/532a2f07-92db97c0addf07d5cb73.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-1aaa7ae72a1cb50b5792.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/coffee-4-craig-mfork/testluke
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-redirects-js-72fd2ec7457ea5c65f7a.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/testluke/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/testluke2
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-redirects-js-72fd2ec7457ea5c65f7a.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/testluke2/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/donateWidget/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-donate-widget-js-57f7f055203343d55bc7.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/donateWidget/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/redirects/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-redirects-js-72fd2ec7457ea5c65f7a.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/redirects/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/siteSettings/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-site-settings-js-f00cc86c78b638fe8aac.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/siteSettings/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-index-page-js-ef400d84e93db33ee735.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/about-us/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/d7eeaac4-dd62917dc706e1ab8ea6.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/252f366e-88bfb22e3601f67ba3bb.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/44d9a74c417ca7c4b42dc96810221b8862354751-a74128e791481e5ba4fc.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-about-page-js-08ea709a104c48d3a5fd.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/about-us/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/contact-us/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/44d9a74c417ca7c4b42dc96810221b8862354751-a74128e791481e5ba4fc.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-contact-page-js-21521414e01842c99ffe.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/contact-us/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/fundraising/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/44d9a74c417ca7c4b42dc96810221b8862354751-a74128e791481e5ba4fc.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-fundraising-page-js-a61eebec204757558cbb.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/fundraising/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/support-us/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/44d9a74c417ca7c4b42dc96810221b8862354751-a74128e791481e5ba4fc.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-templates-support-page-js-ba0a2f5d14c1977e5434.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/support-us/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/404/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-pages-404-js-61029fe8610e588eb719.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/redirect/
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-pages-redirect-index-js-61c5052f7799f85c6cb1.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/redirect/page-data.json>; rel=preload; as=fetch; crossorigin
+/coffee-4-craig-mfork/404.html
+  Link: </coffee-4-craig-mfork/webpack-runtime-5aefc4e011f32ab9a444.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/framework-e245a832c7032f68d3af.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/532a2f07-92db97c0addf07d5cb73.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/app-1aaa7ae72a1cb50b5792.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/0514a2045a4d5634b9766c0a7e700706f8948277-ffc808ed9654aa7034e3.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/component---src-pages-404-js-61029fe8610e588eb719.js>; rel=preload; as=script
+  Link: </coffee-4-craig-mfork/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </coffee-4-craig-mfork/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
