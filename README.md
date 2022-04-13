@@ -1,7 +1,7 @@
 # Coffee 4 Craig Wesbite
 
 **Note:** This site is based off the [Gatsby + Netlify CMS Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
-
+**View the current live build of the website at: https://mateiasul.github.io/coffee-4-craig-mfork/**
 ## Prerequisites
 
 - Node (I recommend using v8.2.0 or higher)
